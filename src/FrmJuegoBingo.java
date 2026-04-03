@@ -12,7 +12,7 @@ public class FrmJuegoBingo extends JFrame {
     String[] encabezados1 = { "Title 1", "Title 2", "Title 3", "Title 4" };
     String[] encabezados2 = { "Title 1", "Title 2", "Title 3", "Title 4" };
     JTextField txtDevolver;
-    JComboBox cmbTabla;
+    JComboBox<String> cmbTabla;
 
     //metodo constructor
     public FrmJuegoBingo(){
@@ -50,7 +50,7 @@ public class FrmJuegoBingo extends JFrame {
         lblTabla.setBounds(290, 140, 100, 40);
         add(lblTabla);
 
-        cmbTabla = new JComboBox();
+        cmbTabla = new JComboBox<String>();
         cmbTabla.setBounds(360, 140, 400, 40);
         add(cmbTabla);
 
